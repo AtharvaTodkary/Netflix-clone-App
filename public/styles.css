@@ -27,7 +27,7 @@
     /* height: 540px; */
   }
   body {
-    background: #111;
+    background: #1f1f1f;
   }
   /****************Header**************/
   .header {
@@ -114,10 +114,10 @@
   /**********Banner**********/
   
   .main {
-    border: 1px solid pink;
+    border: 1px solid black;
   }
   .main #face {
-    border: 1px solid red;
+    border: 1px solid black;
   }
   #face #review{
     width: 100%;
@@ -135,18 +135,19 @@
   #container #card-holder{
     width: 100%;
     height: 80vh;
-    border: 1px solid gainsboro;
+    border: 1px solid black;
     justify-content: left;
-    margin: 2% 0;
+    /* margin: 2% 0; */
   }
   #card-holder h3{
-    height: 15%;
+    height: 11%;
     padding: 1% 4%;
+    background-color: #323131;
   }
   #card-holder #card-container{
     width: 100%;
     height: 87%;
-    border: 1px solid gold;
+    border: 1px solid black;
     padding: 0 4%;
     display: flex;
     justify-content: left;
@@ -156,16 +157,24 @@
   #card-container #card{
     position: relative;
     align-self: center;
-    border: 1px solid greenyellow;
+    border: 1px solid black;
     height: 84%;
     min-width: 20%;
     overflow-x: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    box-shadow: 1px 1px 10px white;
   }
   #card #Info{
     height: 100%;
-    backdrop-filter: blur(14px); 
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 253, 253, 0.7); 
+    font-size: 10px;
+  }
+  #Info #cover{
+    width: 60%;
+    height: 60%;
+    margin: 2% 20%;
   }
   /***********footer icon************/
   .footer {
