@@ -27,8 +27,8 @@ export default function Container() {
  
   return (
     <div id="container">
-      <CardHolder recommend={"Movies"} value={movieValues} genre={movieGenreValues}/>
-      <CardHolder recommend={"Tv Shows"} value={tvValues} genre={movieGenreValues}/>
+      <CardHolder id={"Movies"} recommend={"Movies"} value={movieValues} genre={movieGenreValues}/>
+      <CardHolder id={"Shows"} recommend={"Tv Shows"} value={tvValues} genre={movieGenreValues}/>
     </div>
   );
 }

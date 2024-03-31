@@ -45,14 +45,16 @@ export default function Card(props) {
       onMouseOut={MouseOut}
     >
       <div id="Info" style={infoStyle}>
-        <p style={{fontSize: "15px", color: "black"}}>Movie Name:{props.title}</p>
         <img
           id="cover"
           src={"https://image.tmdb.org/t/p/w500/" + props.poster_path}
           alt=""
           />
-          <p style={{color: "black", fontSize:"11px", fontWeight: 600, padding:"4px 0 5px 0"}}>genre:{genreArray}</p>
-        <p style={{color: "black"}}><span style={{fontWeight:800, color: "black"}}>Description :</span>{props.overview}</p>
+          <div className="caption">
+            <p className="title">{props.title}</p>
+            <p>{genreArray}</p>
+            <p className="text-truncate">{props.overview}</p>
+          </div>
       </div>
     </div>
   );
