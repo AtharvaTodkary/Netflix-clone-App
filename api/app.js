@@ -7,7 +7,10 @@ var cors = require('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var movieAPIRouter = require("./routes/movieAPI");
-var songAPIRouter = require("./routes/songAPI");
+var loginRouter = require("./routes/login");
+var signupRouter = require("./routes/signup");
+var mongoRouter = require("./routes/mongo");
+// var songAPIRouter = require("./routes/songAPI");
 
 
 var app = express();
@@ -26,7 +29,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/movieAPI", movieAPIRouter)
-app.use("/songAPI", songAPIRouter)
+app.use("/login", loginRouter)
+app.use("/signup", signupRouter)
+app.use("/mongo", mongoRouter)
+// app.use("/songAPI", songAPIRouter)
 
 
 // catch 404 and forward to error handler
